@@ -18,7 +18,7 @@
   line-height: 2rem;
   font-style: italic;
   padding: 0 1rem;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
   border-radius: 6px;
   border-left: 8px solid $teal;
 }
@@ -34,6 +34,6 @@
 .headline--secondary {
   font-size: 1.1rem;
   font-weight: 100;
-  margin: 1rem;
-  color: lighten($gray, 20%);
+  margin: 2rem 1rem;
+  color: $gray-light;
 }
