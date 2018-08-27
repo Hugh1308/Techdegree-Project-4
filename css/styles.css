@@ -303,11 +303,16 @@ ul {
   padding: 0; }
 
 p {
-  line-height: 1.6rem; }
+  line-height: 1.6rem;
+  margin: 1rem; }
 
 .container {
   width: 90%;
   margin: 0 auto; }
+
+.grid__row {
+  border: 1px solid red;
+  margin: 20px 0; }
 
 .grid__col--3 {
   text-align: center; }
@@ -321,14 +326,26 @@ p {
   color: #5ddffc;
   font-weight: bold; }
 
+.blockquote {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-style: italic;
+  padding: 0 1rem;
+  margin-bottom: 60px;
+  border-radius: 6px;
+  border-left: 8px solid #58e1c1; }
+
 .headline--primary {
   color: #58e1c1;
   font-weight: 900;
+  padding: 10px;
   margin-left: 30px; }
 
 .headline--secondary {
   font-size: 1.1rem;
-  font-weight: 100; }
+  font-weight: 100;
+  margin: 1rem;
+  color: #b3b3b3; }
 
 .nav__item {
   padding: 16px 0;
