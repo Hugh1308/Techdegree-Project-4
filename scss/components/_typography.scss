@@ -3,11 +3,14 @@
 // ======================================
 
 .container {
-
+  font-family: 'Roboto', Arial, sans-serif;
+  color: $gray;
 }
 
 .link {
-
+  text-decoration: none;
+  color: $blue;
+  font-weight: bold;
 }
 
 .blockquote {
@@ -15,9 +18,12 @@
 }
 
 .headline--primary {
-
+  color: $teal;
+  font-weight: 900;
+  margin-left: 30px;
 }
 
 .headline--secondary {
-  
+  font-size: 1.1rem;
+  font-weight: 100;
 }

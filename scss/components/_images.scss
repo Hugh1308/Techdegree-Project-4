@@ -3,7 +3,10 @@
 // ======================================
 
 .img--logo {
-
+  border: 1px solid red;
+  padding: 16px 0;
+  align-self: center;
+  flex-grow: 1;
 }
 
 .img--frame {
@@ -11,5 +14,5 @@
 }
 
 .img--avatar {
-  
+
 }
