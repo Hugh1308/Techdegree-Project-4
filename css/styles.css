@@ -344,9 +344,10 @@ p {
     .nav__item a:visited {
       color: #5ddffc; }
   .nav__item:hover {
-    color: #808080;
     background-color: #58e1c1;
     border-radius: 3px; }
+    .nav__item:hover a {
+      color: #ffffff; }
 
 .img--logo {
   border: 1px solid red;
