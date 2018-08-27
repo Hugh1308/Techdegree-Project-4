@@ -3,13 +3,22 @@
 // ======================================
 
 .form {
-
+  // width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .form__label--hidden {
-
+  display: none;
 }
 
 .form__input {
-  
+  // width: 90%;
+  padding: .75rem;
+  margin: 1rem 1.5rem .5rem;
+  border-style: none;
+  border-bottom: 5px solid $teal;
+  align-self: stretch;
+  font-size: .9rem;
+  font-weight: bold;
 }
