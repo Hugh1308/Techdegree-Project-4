@@ -3,11 +3,17 @@
 // ======================================
 
 // Media Queries
+@media ($mw $lg) {
+  @mixin flexbox {
+    flex-direction: row;
+  }
+}
 
 // Flexbox Settings
 @mixin flexbox {
   display: flex;
-  flex-flow: column nowrap;//shorthand for flex-direction and flex-wrap
+  flex-direction: column;
+  // flex-wrap: nowrap;
 }
 
 // Grid System styles
@@ -29,4 +35,9 @@
   font-weight: bold;
   text-align: center;
   border: none;
+}
+
+// Troubleshooting
+@mixin red-box {
+  border: 1px solid red;
 }

@@ -3,9 +3,11 @@
 // ======================================
 
 .nav__item {
+  // display: inline-block;
   padding: 16px 0;
   margin: 10px 0;
   text-align: center;
+  @include red-box;
   & a {
     text-decoration: none;
     &:link {

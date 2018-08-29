@@ -4,6 +4,9 @@
 
 .img--logo {
   padding: 16px 0;
+  display: flex;
+  margin: 0 auto;
+  @include red-box;
 }
 
 .img--frame {

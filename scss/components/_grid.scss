@@ -10,10 +10,10 @@
 
 .grid__row {
   @include flexbox;
-  align-items: stretch;
   margin: 0 0 2rem;
-  // border: 1px solid red;
+  @include red-box;
 }
+
 
 // For loop to generate grid_col classes
 @for $num from 2 through 12 {
@@ -26,6 +26,15 @@
     }
   }
 }
+// Media query, using for loop to set widths of grid system
+@media ($mw $lg) {
+  @for $col-num from 2 through 12 {
+    .grid__col--#{$col-num} {
+      width: get-pc($col-num);
+    }
+  }
+}
+
 
 .centered {
 

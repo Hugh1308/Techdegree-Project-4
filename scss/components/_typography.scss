@@ -11,7 +11,7 @@
   text-decoration: none;
   color: $blue;
   font-weight: bold;
-  text-align: center;
+  @include red-box;
 }
 
 .blockquote {
