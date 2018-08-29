@@ -5,16 +5,19 @@
 .container {
   width: 90%;
   margin: 0 auto;
+  border: 1px solid red;
 }
+
 .grid__row {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   // flex-wrap: nowrap;
-  // align-items: stretch;
+  flex-flow: column nowrap;//shorthand for two lines above
   border: 1px solid red;
   align-items: stretch;
   margin: 2rem 0;
 }
+
 .grid__col--2 {
 
 }
@@ -23,77 +26,81 @@
   display: flex;
   flex-direction: column;
   color: $gray;
-  background-color: $purple-light;
   border-radius: 4px;
   padding: .9rem;
   margin: .25rem .5rem;
   font-weight: bold;
-  align-items: center;
-  text-align: left;
+  &.theme__colors {
+    background-color: $purple-light;
+  }
 }
 
 .grid__col--4 {
   display: flex;
   flex-direction: column;
   color: $gray;
-  background-color: $blue;
   border-radius: 4px;
   padding: .9rem;
   margin: .25rem .5rem;
   font-weight: bold;
-  align-self: stretch;
+  &.theme__colors {
+    background-color: $blue;
+  }
 }
 
 .grid__col--5 {
   display: flex;
   flex-direction: column;
   color: $gray;
-  background-color: $green-light;
   border-radius: 4px;
   padding: .9rem;
   margin: .25rem .5rem;
   font-weight: bold;
-  align-self: stretch;
+  &.theme__colors {
+    background-color: $green-light;
+  }
 }
 
 .grid__col--6 {
   display: flex;
   flex-direction: column;
   color: $gray;
-  background-color: $blue-dark;
   border-radius: 4px;
   padding: .9rem;
   margin: .25rem .5rem;
   font-weight: bold;
-  align-self: stretch;
- }
+  &.theme__colors {
+    background-color: $blue-dark;
+  }
+}
 
 .grid__col--7 {
   display: flex;
   flex-direction: column;
   color: $gray;
-  background-color: $berry-light;
   border-radius: 4px;
   padding: .9rem;
   margin: .25rem .5rem;
   font-weight: bold;
-  align-self: stretch;
+  &.theme__colors {
+    background-color: $berry-light;
+  }
 }
 
 .grid__col--8 {
   display: flex;
   flex-direction: column;
   color: $gray;
-  background-color: $red-light;
   border-radius: 4px;
   padding: .9rem;
   margin: .25rem .5rem;
   font-weight: bold;
-  align-self: stretch;
+  &.theme__colors {
+    background-color: $red-light;
+  }
 }
 
 .grid__col--9 {
-  // border: 1px solid red;
 }
 
 .grid__col--10 {
@@ -108,18 +115,30 @@
   display: flex;
   flex-direction: column;
   color: $gray;
-  background-color: $teal;
   border-radius: 4px;
   padding: .9rem;
   margin: .75rem .5rem;
   font-weight: bold;
-  align-self: stretch;
+  &.theme__colors {
+    background-color: $teal;
+  }
 }
+
+
 
 .centered {
 
 }
 
 .theme__colors {
+  // get-map($themes, $s-num)
+  // $sname: &;
+  // $s-name: get-s-name($name);
+  // $s-num: get-s-num($s-name);
 
+  // @each $num, $color in $themes {
+  //   .grid_col--#{$num} {
+  //     background-color: $color;
+  //   }
+  // }
 }

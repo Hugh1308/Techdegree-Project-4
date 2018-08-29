@@ -21,3 +21,14 @@ $purple: #927bc1;
 $purple-light: lighten($purple, 20%);
 $green: #63cc82;
 $green-light: lighten($green, 10%);
+
+//Theme Colors
+$themes: (
+    '3': $purple-light,
+    '4': $blue,
+    '5': $green-light,
+    '6': $blue-dark,
+    '7': $berry-light,
+    '8': $red-light,
+   '12': $teal,
+);
