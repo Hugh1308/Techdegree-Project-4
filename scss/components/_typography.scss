@@ -3,7 +3,7 @@
 // ======================================
 
 .container {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: $font-stack;
   color: $gray;
 }
 
@@ -19,22 +19,21 @@
   line-height: 2rem;
   font-style: italic;
   padding: 0 1rem;
-  // margin-bottom: 60px;
+  margin: 1.5rem 1.75rem;
   border-radius: 6px;
   border-left: 8px solid $teal;
 }
 
 .headline--primary {
   color: $teal;
-  font-weight: 900;
+  font-weight: 700;
   padding: 10px;
-  margin-left: 30px;
-  // border: 1px solid red;
+  margin-left: 2rem;
 }
 
 .headline--secondary {
+  color: $gray-light;
   font-size: 1.1rem;
   font-weight: 100;
   margin: 2rem 1rem;
-  color: $gray-light;
 }

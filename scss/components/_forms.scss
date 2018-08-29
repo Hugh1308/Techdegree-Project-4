@@ -3,9 +3,7 @@
 // ======================================
 
 .form {
-  // width: 100%;
-  display: flex;
-  flex-direction: column;
+  @include flexbox;
 }
 
 .form__label--hidden {
@@ -13,12 +11,10 @@
 }
 
 .form__input {
-  // width: 90%;
   padding: .75rem;
-  margin: 1rem 1.5rem .5rem;
+  margin: 1rem 1.5rem .75rem;
   border-style: none;
   border-bottom: 5px solid $teal;
-  align-self: stretch;
   font-size: .9rem;
   font-weight: bold;
 }

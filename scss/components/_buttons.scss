@@ -2,66 +2,12 @@
 //  Button Styles
 // ======================================
 
-.btn--default {
-  color: $white;
-  background-color: $blue;
-  border-radius: 4px;
-  padding: .9rem 40px;
-  margin: .75rem .5rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-  border: none;
-}
-
-.btn--success {
-  color: $white;
-  background-color: $green;
-  border-radius: 4px;
-  padding: .9rem 40px;
-  margin: .75rem .5rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-  border: none;
-}
-
-.btn--error {
-  color: $white;
-  background-color: $berry;
-  border-radius: 4px;
-  padding: .9rem 40px;
-  margin: .75rem .5rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-  border: none;
-}
-
-.btn--warning {
-  color: $white;
-  background-color: $red;
-  border-radius: 4px;
-  padding: .9rem 40px;
-  margin: .75rem .5rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-  border: none;
-}
-
-.btn--info {
-  color: $white;
-  background-color: $purple;
-  border-radius: 4px;
-  padding: .9rem 40px;
-  margin: .75rem .5rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-  border: none;
-}
-
-.theme__colors {
-
+// Each loop to generate button classes
+@each $name, $color in $btn-colors {
+  .btn--#{$name} {
+    @include button;
+    &.theme__colors {
+      background-color: map-get($btn-colors, $name);
+    }
+  }
 }

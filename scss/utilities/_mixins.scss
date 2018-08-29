@@ -5,3 +5,28 @@
 // Media Queries
 
 // Flexbox Settings
+@mixin flexbox {
+  display: flex;
+  flex-flow: column nowrap;//shorthand for flex-direction and flex-wrap
+}
+
+// Grid System styles
+@mixin grid {
+  @include flexbox;
+  color: $gray;
+  border-radius: 4px;
+  padding: .9rem;
+  margin: .25rem;
+}
+
+// Button styles
+@mixin button {
+  color: $white;
+  border-radius: 4px;
+  padding: .9rem 40px;
+  margin: .75rem .25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+}

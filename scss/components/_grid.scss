@@ -5,140 +5,32 @@
 .container {
   width: 90%;
   margin: 0 auto;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 .grid__row {
-  display: flex;
-  // flex-direction: column;
-  // flex-wrap: nowrap;
-  flex-flow: column nowrap;//shorthand for two lines above
-  border: 1px solid red;
+  @include flexbox;
   align-items: stretch;
-  margin: 2rem 0;
+  margin: 0 0 2rem;
+  // border: 1px solid red;
 }
 
-.grid__col--2 {
-
-}
-
-.grid__col--3 {
-  display: flex;
-  flex-direction: column;
-  color: $gray;
-  border-radius: 4px;
-  padding: .9rem;
-  margin: .25rem .5rem;
-  font-weight: bold;
-  &.theme__colors {
-    background-color: $purple-light;
+// For loop to generate grid_col classes
+@for $num from 2 through 12 {
+  @if map-has-key($themes, #{$num}) {
+    .grid__col--#{$num} {
+      @include grid;
+      &.theme__colors {
+        background-color: map-get($themes, #{$num});
+      }
+    }
   }
 }
-
-.grid__col--4 {
-  display: flex;
-  flex-direction: column;
-  color: $gray;
-  border-radius: 4px;
-  padding: .9rem;
-  margin: .25rem .5rem;
-  font-weight: bold;
-  &.theme__colors {
-    background-color: $blue;
-  }
-}
-
-.grid__col--5 {
-  display: flex;
-  flex-direction: column;
-  color: $gray;
-  border-radius: 4px;
-  padding: .9rem;
-  margin: .25rem .5rem;
-  font-weight: bold;
-  &.theme__colors {
-    background-color: $green-light;
-  }
-}
-
-.grid__col--6 {
-  display: flex;
-  flex-direction: column;
-  color: $gray;
-  border-radius: 4px;
-  padding: .9rem;
-  margin: .25rem .5rem;
-  font-weight: bold;
-  &.theme__colors {
-    background-color: $blue-dark;
-  }
-}
-
-.grid__col--7 {
-  display: flex;
-  flex-direction: column;
-  color: $gray;
-  border-radius: 4px;
-  padding: .9rem;
-  margin: .25rem .5rem;
-  font-weight: bold;
-  &.theme__colors {
-    background-color: $berry-light;
-  }
-}
-
-.grid__col--8 {
-  display: flex;
-  flex-direction: column;
-  color: $gray;
-  border-radius: 4px;
-  padding: .9rem;
-  margin: .25rem .5rem;
-  font-weight: bold;
-  &.theme__colors {
-    background-color: $red-light;
-  }
-}
-
-.grid__col--9 {
-}
-
-.grid__col--10 {
-
-}
-
-.grid__col--11 {
-
-}
-
-.grid__col--12 {
-  display: flex;
-  flex-direction: column;
-  color: $gray;
-  border-radius: 4px;
-  padding: .9rem;
-  margin: .75rem .5rem;
-  font-weight: bold;
-  &.theme__colors {
-    background-color: $teal;
-  }
-}
-
-
 
 .centered {
 
 }
 
 .theme__colors {
-  // get-map($themes, $s-num)
-  // $sname: &;
-  // $s-name: get-s-name($name);
-  // $s-num: get-s-num($s-name);
 
-  // @each $num, $color in $themes {
-  //   .grid_col--#{$num} {
-  //     background-color: $color;
-  //   }
-  // }
 }

@@ -1,16 +1,3 @@
 // ======================================
 //  Functions
 // ======================================
-
-// @each $num, $color in $themes {
-//   .grid_col--#{$num} {
-//     background-color: $color;
-//   }
-// }
-
-// @function get-s-num(quote($s-name)) {
-//   $start: str-index($s-name, "--");
-//   $end: str-length($s-name);
-//   $s-num: str-slice($s-name, $start, $end);
-//   @return $s-num;
-// }
