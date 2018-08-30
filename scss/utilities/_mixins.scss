@@ -2,21 +2,19 @@
 //  Mixins
 // ======================================
 
-// Media Queries
-@media ($mw $lg) {
-  @mixin flexbox {
-    flex-direction: row;
-  }
-}
-
 // Flexbox Settings
 @mixin flexbox {
   display: flex;
   flex-direction: column;
-  // flex-wrap: nowrap;
+  flex-grow: 1;
 }
 
-// Grid System styles
+@mixin flexbox-lg {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+// Grid System Styles
 @mixin grid {
   @include flexbox;
   color: $gray;
@@ -25,7 +23,7 @@
   margin: .25rem;
 }
 
-// Button styles
+// Button Styles
 @mixin button {
   color: $white;
   border-radius: 4px;
@@ -35,9 +33,21 @@
   font-weight: bold;
   text-align: center;
   border: none;
+  @media ($mw $lg) {
+    padding: .9rem 3rem;
+  }
 }
 
-// Troubleshooting
+// Navigation Styles
+@mixin nav-spc {
+  padding: .9rem 1rem;
+  margin: .75rem .25rem;
+  @media ($mw $lg) {
+    margin: 1.5rem .25rem 0;
+  }
+}
+
+// Layout Troubleshooting Styles
 @mixin red-box {
   border: 1px solid red;
 }

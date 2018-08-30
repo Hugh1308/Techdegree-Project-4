@@ -3,13 +3,10 @@
 // ======================================
 
 .nav__item {
-  // display: inline-block;
-  padding: 16px 0;
-  margin: 10px 0;
   text-align: center;
-  @include red-box;
+  @include nav-spc;
   & a {
-    text-decoration: none;
+    @extend %no-dec;
     &:link {
       color: $gray;
     }
@@ -23,5 +20,9 @@
     & a {
       color: $white;
     }
+  }
+  @media ($mw $lg) {
+    display: inline-block;
+    font-size: 1.1rem;
   }
 }

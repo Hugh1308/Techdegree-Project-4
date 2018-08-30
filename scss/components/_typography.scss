@@ -8,10 +8,9 @@
 }
 
 .link {
-  text-decoration: none;
+  @extend %no-dec;
   color: $blue;
   font-weight: bold;
-  @include red-box;
 }
 
 .blockquote {
@@ -22,6 +21,12 @@
   margin: 1.5rem 1.75rem;
   border-radius: 6px;
   border-left: 8px solid $teal;
+  @media ($mw $lg) {
+    font-size: 1.7rem;
+    line-height: 2.1rem;
+    padding: 0 2rem;
+    margin: 1.6rem 2rem;
+  }
 }
 
 .headline--primary {
@@ -32,8 +37,12 @@
 }
 
 .headline--secondary {
+  @extend %thin-fnt;
   color: $gray-light;
   font-size: 1.1rem;
   font-weight: 100;
   margin: 2rem 1rem;
+  @media ($mw $lg) {
+    font-size: 1.2rem;
+  }
 }

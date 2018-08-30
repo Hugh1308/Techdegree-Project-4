@@ -2,7 +2,7 @@
 //  Button Styles
 // ======================================
 
-// Each loop to generate button classes
+// @each loop to generate button classes
 @each $name, $color in $btn-colors {
   .btn--#{$name} {
     @include button;

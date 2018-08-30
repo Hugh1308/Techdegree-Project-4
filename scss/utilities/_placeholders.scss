@@ -3,9 +3,18 @@
 // ======================================
 
 // Links
+%no-dec {
+  text-decoration: none;
+}
 
 // Images
+%cntr-slf {
+  align-self: center;
+}
 
 // Headlines
+%thin-fnt {
+  font-family: $heading-stack;
+}
 
 // Nav Items
