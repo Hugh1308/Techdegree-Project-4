@@ -2,6 +2,13 @@
 //  Mixins
 // ======================================
 
+// Media Queries
+@mixin media {
+  @media ($mw $lg) {
+    @content;
+  }
+}
+
 // Flexbox Settings
 @mixin flexbox {
   display: flex;
@@ -27,13 +34,13 @@
 @mixin button {
   color: $white;
   border-radius: 4px;
-  padding: .9rem 40px;
+  padding: .9rem 2.5rem;
   margin: .75rem .25rem;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
   border: none;
-  @media ($mw $lg) {
+  @include media {
     padding: .9rem 3rem;
   }
 }
@@ -42,7 +49,7 @@
 @mixin nav-spc {
   padding: .9rem 1rem;
   margin: .75rem .25rem;
-  @media ($mw $lg) {
+  @include media {
     margin: 1.5rem .25rem 0;
   }
 }

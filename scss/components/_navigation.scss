@@ -21,7 +21,7 @@
       color: $white;
     }
   }
-  @media ($mw $lg) {
+  @include media {
     display: inline-block;
     font-size: 1.1rem;
   }

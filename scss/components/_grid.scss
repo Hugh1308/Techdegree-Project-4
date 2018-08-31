@@ -41,11 +41,7 @@
 }
 
 .centered {
-  @media ($mw $lg) {
+  @include media {
     flex-grow: 0;
   }
-}
-
-.theme__colors {
-
 }
